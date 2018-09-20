@@ -7,14 +7,14 @@ function processOnClick(e) {
         processInputData(txtData.value);
     }else if(fileData.value){
         const fr = new FileReader();
-        fr.onload = file => { processInputData(file.target.result)};
+        fr.onload = function(file) { processInputData(file.target.result)};
         fr.readAsText(fileData.files[0]);
     }
 }
 
 
 function processInputData(input_data){
-    const regex = /(\d+[-./]\d+[-./]\d+),? (\d+:\d+:\d+( [AP]M)*)\s+Bethesda:.*You have been selected[^\d]*(\d+)\s+(.*).* for The Elder Scrolls: Legends/g;
+    const regex = /(\d+[-./]\d+[-./]\d+|\w+),? (\d+:\d+:\d+( [AP]M)*)\s+Bethesda:.*You have been selected[^\d]*(\d+)\s+(.*).* for The Elder Scrolls: Legends/g;
     let match = regex.exec(input_data);
     let drops = [];
 
@@ -43,8 +43,6 @@ function getLineForDrop(drop) {
 }
 
 function processDrops(drops) {
-    drops.sort(x => {});
-
     let tableOutput = document.getElementById('tableOutput');
     let tableSummary = document.getElementById('tableSummary');
     let outputHtml = '';

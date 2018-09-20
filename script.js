@@ -14,17 +14,17 @@ function processOnClick(e) {
 
 
 function processInputData(input_data){
-    const regex = /(\d+[-./]\d+[-./]\d+), (\d\d:\d\d:\d\d)\s+Bethesda:.*You have been selected[^\d]*(\d+)\s+(.*).* for The Elder Scrolls: Legends/g;
+    const regex = /(\d+[-./]\d+[-./]\d+), (\d+:\d+:\d+( [AP]M)*)\s+Bethesda:.*You have been selected[^\d]*(\d+)\s+(.*).* for The Elder Scrolls: Legends/g;
     let match = regex.exec(input_data);
     let drops = [];
 
     while (match != null) {
-
+        console.log(match);
         drops.push({
             date: match[1],
             time: match[2],
-            amount: match[3],
-            item: match[4]
+            amount: match[4],
+            item: match[5]
         });
         match = regex.exec(input_data);
     }

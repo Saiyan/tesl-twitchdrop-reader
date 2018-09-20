@@ -97,10 +97,10 @@ function generateSummaryHtml(summary) {
 
     html += '<tr><td class="summary-gems">' + summary.gems + '</td><td> Soul Gems</td></tr>';
     html += '<tr><td class="summary-gold">' + summary.gold + '</td><td> Gold </td></tr>';
-    html += '<tr><td class="summary-legpack">' + summary.legpack + '</td><td> Legendary Card Pack\'s</td></tr>';
-    html += '<tr><td class="summary-skyrimpack">' + summary.skyrimpack + '</td><td> Skyrim Card Pack\'s</td></tr>';
-    html += '<tr><td class="summary-corepack">' + summary.corepack + '</td><td> Core Card Pack\'s</td></tr>';
-    html += '<tr><td class="summary-ticket">' + summary.ticket + '</td><td> Arena Ticket\'s</td></tr>';
+    html += '<tr><td class="summary-legpack">' + summary.legpack + '</td><td> Legendary Card Packs</td></tr>';
+    html += '<tr><td class="summary-skyrimpack">' + summary.skyrimpack + '</td><td> Skyrim Card Packs</td></tr>';
+    html += '<tr><td class="summary-corepack">' + summary.corepack + '</td><td> Core Card Packs</td></tr>';
+    html += '<tr><td class="summary-ticket">' + summary.ticket + '</td><td> Arena Tickets</td></tr>';
 
     return html;
 }

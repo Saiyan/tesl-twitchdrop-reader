@@ -1,3 +1,8 @@
+
+if(window.File === undefined || navigator.userAgent.indexOf('Edge') || navigator.userAgent.indexOf('rv:11.0')) {
+    document.querySelector('.hide_in_ie').style = 'display: none;';
+}
+
 function processOnClick(e) {
 
     const txtData = document.getElementById('txtData');

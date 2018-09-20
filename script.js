@@ -19,7 +19,6 @@ function processInputData(input_data){
     let drops = [];
 
     while (match != null) {
-        console.log(match);
         drops.push({
             date: match[1],
             time: match[2],

@@ -14,7 +14,7 @@ function processOnClick(e) {
 
 
 function processInputData(input_data){
-    const regex = /(\d+\.\d+\.\d+), (\d\d:\d\d:\d\d)\s+Bethesda:.*You have been selected[^\d]*(\d+)\s+(.*).* for The Elder Scrolls: Legends/g;
+    const regex = /(\d+[./]\d+[./]\d+), (\d\d:\d\d:\d\d)\s+Bethesda:.*You have been selected[^\d]*(\d+)\s+(.*).* for The Elder Scrolls: Legends/g;
     let match = regex.exec(input_data);
     let drops = [];
 

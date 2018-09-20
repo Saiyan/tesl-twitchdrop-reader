@@ -1,0 +1,43 @@
+body, * {
+    font-family: monospace;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+}
+
+.main{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form_row{
+    margin-bottom: 20px;
+}
+
+table.output{
+    width: 100%;
+}
+
+.summary {
+    margin: 0 auto 20px auto;
+    text-align: left;
+}
+
+
+.summary td:first-child{
+    padding-right: 20px;
+}
+
+button {
+    border:
+}
